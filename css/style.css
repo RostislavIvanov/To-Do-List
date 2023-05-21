@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap");
+.title {
+  text-align: center;
+  padding: 20px;
+  font-size: 60px;
+  font-weight: 600;
+  border-bottom: 2px solid rgb(173, 173, 173);
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+html,
+body {
+  padding: 20px;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  background: rgb(15, 58, 255);
+  background: linear-gradient(125deg, rgb(15, 58, 255) 0%, rgb(79, 9, 121) 49%, rgb(255, 0, 131) 100%);
+}
+
+.wrapper {
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  margin: 0px auto;
+  max-width: 600px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .content {
+  flex: 1 1 auto;
+  margin: 20px;
+}
+
+.form {
+  display: flex;
+}
+.form .form__input {
+  padding: 10px;
+  font-size: 26px;
+  flex: 1 0 auto;
+  border-bottom: 2px solid rgb(173, 173, 173);
+}
+
+.tasks {
+  font-size: 26px;
+}
+.tasks li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  line-height: 1.2;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+.tasks li p {
+  max-width: 400px;
+  flex: 1 1 auto;
+}
+.tasks li div {
+  flex: 0 0 40px;
+  margin-right: -10px;
+  font-size: 30px;
+}
+.tasks li div:hover {
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+  color: #6a6a6a;
+}
